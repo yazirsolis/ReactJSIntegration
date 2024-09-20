@@ -27,6 +27,7 @@ namespace ReactJSIntegration
             //	.AddScriptWithoutTransform("~/Scripts/bundle.server.js")
 
             ReactSiteConfiguration.Configuration
+                .AddScript("~/Scripts/reactjs/remarkable.min.js")
                 .AddScript("~/Scripts/Components/Tutorial.jsx");
 
             JsEngineSwitcher.Current.DefaultEngineName = V8JsEngine.EngineName;

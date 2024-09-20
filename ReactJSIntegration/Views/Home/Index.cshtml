@@ -1,7 +1,15 @@
-﻿@{
+﻿@model IEnumerable<ReactJSIntegration.Models.CommentModel>
+@{
     ViewBag.Title = "Home Page";
 }
 
 <main>
-    <div id="content"></div>
+    @*<div id="content"></div>*@
+    @Html.React("CommentBox", new
+    {
+        initialData = Model,
+        url = Url.Action("Comments"),
+        submitUrl = Url.Action("AddComment"),
+        pollInterval = 2000
+    })
 </main>

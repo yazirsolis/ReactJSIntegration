@@ -35,7 +35,7 @@
     @Scripts.Render("~/Scripts/reactjs/react.development.js")
     @Scripts.Render("~/Scripts/reactjs/react-dom.development.js")
     @Scripts.Render("~/Scripts/reactjs/remarkable.min.js")
-    @Scripts.Render("~/bundles/main")
+    <script src="@Url.Content("~/Scripts/Components/Tutorial.jsx")"></script>
     @Html.ReactInitJavaScript()
 
     @Scripts.Render("~/bundles/jquery")
